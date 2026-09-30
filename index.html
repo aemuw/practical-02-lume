@@ -1,18 +1,20 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="uk">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="LUME — сучасні предмети для дому. Семантична HTML-сторінка за макетом Figma.">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="LUME — сучасні предмети для дому: світло, живлення та прості технологічні рішення.">
     <title>LUME — Smart Objects for Home</title>
 </head>
-<body>
 
+<body>
     <a href="#main-content">Перейти до основного вмісту</a>
 
     <header>
         <div>
-            <a href="index.html">LUME</a>
+            <a href="index.html" aria-label="LUME — на головну">
+                <strong>LUME</strong>
+            </a>
             <p>SMART OBJECTS FOR HOME</p>
         </div>
 
@@ -25,17 +27,20 @@
             </ul>
         </nav>
 
-        <form action="#" method="get">
-            <label for="search">Пошук</label>
-            <input type="search" id="search" name="search" placeholder="SEARCH">
-            <button type="submit">BAG 0</button>
-        </form>
+        <div>
+            <form action="#" method="get">
+                <label for="search">Пошук товарів</label>
+                <input type="search" id="search" name="search" placeholder="SEARCH">
+            </form>
+
+            <a href="#bag">BAG 0</a>
+        </div>
     </header>
 
     <main id="main-content">
-
         <section id="shop" aria-labelledby="hero-title">
             <p>EVERYDAY</p>
+
             <h1 id="hero-title">OBJECTS.</h1>
 
             <p>
@@ -48,55 +53,66 @@
 
             <p>01 / 04</p>
 
-            <article>
+            <article aria-labelledby="featured-product-title">
                 <p>01</p>
-                <h2>LUME TABLE 01</h2>
+                <h2 id="featured-product-title">LUME TABLE 01</h2>
                 <p>Warm light. One dial. Zero clutter.</p>
             </article>
         </section>
 
         <section id="collection" aria-labelledby="collection-title">
             <p>NEW</p>
+
             <h2 id="collection-title">The September edit</h2>
+
             <p>4 objects · 3 finishes · 1 calmer room</p>
 
-            <article>
-                <h3>LUME TABLE 01</h3>
-                <p>Warm desk light</p>
-                <p>€129</p>
-                <p><a href="#product-table">Переглянути товар</a></p>
-            </article>
+            <ul>
+                <li>
+                    <article>
+                        <h3>LUME TABLE 01</h3>
+                        <p>Warm desk light</p>
+                        <p>€129</p>
+                        <a href="#product-table">Переглянути LUME TABLE 01</a>
+                    </article>
+                </li>
 
-            <article>
-                <h3>LUME SOCKET 02</h3>
-                <p>Smart wall socket</p>
-                <p>€79</p>
-                <p><a href="#product-socket">Переглянути товар</a></p>
-            </article>
+                <li>
+                    <article>
+                        <h3>LUME SOCKET 02</h3>
+                        <p>Smart wall socket</p>
+                        <p>€79</p>
+                        <a href="#product-socket">Переглянути LUME SOCKET 02</a>
+                    </article>
+                </li>
 
-            <article>
-                <h3>LUME SWITCH 01</h3>
-                <p>Tactile dimmer</p>
-                <p>€69</p>
-                <p><a href="#product-switch">Переглянути товар</a></p>
-            </article>
+                <li>
+                    <article>
+                        <h3>LUME SWITCH 01</h3>
+                        <p>Tactile dimmer</p>
+                        <p>€69</p>
+                        <a href="#product-switch">Переглянути LUME SWITCH 01</a>
+                    </article>
+                </li>
 
-            <article>
-                <h3>LUME SENSE</h3>
-                <p>Room sensor</p>
-                <p>€59</p>
-                <p><a href="#product-sense">Переглянути товар</a></p>
-            </article>
+                <li>
+                    <article>
+                        <h3>LUME SENSE</h3>
+                        <p>Room sensor</p>
+                        <p>€59</p>
+                        <a href="#product-sense">Переглянути LUME SENSE</a>
+                    </article>
+                </li>
+            </ul>
         </section>
 
         <section id="rooms" aria-labelledby="rooms-title">
             <h2 id="rooms-title">Shop by room</h2>
-
             <ul>
-                <li><a href="#desk">DESK — Focus light + power</a></li>
-                <li><a href="#bedroom">BEDROOM — Soft light + routine</a></li>
-                <li><a href="#living">LIVING — Ambient + control</a></li>
-                <li><a href="#hall">HALL — Sense + welcome</a></li>
+                <li>DESK — Focus light + power</li>
+                <li>BEDROOM — Soft light + routine</li>
+                <li>LIVING — Ambient + control</li>
+                <li>HALL — Sense + welcome</li>
             </ul>
         </section>
 
@@ -127,42 +143,46 @@
             </p>
         </section>
 
-        <section id="product-table" aria-labelledby="table-title">
-            <h2 id="table-title">LUME TABLE 01</h2>
+        <section id="product-table" aria-labelledby="product-table-title">
+            <h2 id="product-table-title">LUME TABLE 01</h2>
             <p>Warm desk light</p>
             <p>€129</p>
         </section>
 
-        <section id="product-socket" aria-labelledby="socket-title">
-            <h2 id="socket-title">LUME SOCKET 02</h2>
+        <section id="product-socket" aria-labelledby="product-socket-title">
+            <h2 id="product-socket-title">LUME SOCKET 02</h2>
             <p>Smart wall socket</p>
             <p>€79</p>
         </section>
 
-        <section id="product-switch" aria-labelledby="switch-title">
-            <h2 id="switch-title">LUME SWITCH 01</h2>
+        <section id="product-switch" aria-labelledby="product-switch-title">
+            <h2 id="product-switch-title">LUME SWITCH 01</h2>
             <p>Tactile dimmer</p>
             <p>€69</p>
         </section>
 
-        <section id="product-sense" aria-labelledby="sense-title">
-            <h2 id="sense-title">LUME SENSE</h2>
+        <section id="product-sense" aria-labelledby="product-sense-title">
+            <h2 id="product-sense-title">LUME SENSE</h2>
             <p>Room sensor</p>
             <p>€59</p>
         </section>
 
+        <section id="bag" aria-labelledby="bag-title">
+            <h2 id="bag-title">Bag</h2>
+            <p>Your bag is currently empty.</p>
+        </section>
     </main>
 
     <footer>
         <p>&copy; 2026 LUME. Smart objects for home.</p>
+
         <nav aria-label="Додаткова навігація">
             <ul>
                 <li><a href="#about">Про LUME</a></li>
                 <li><a href="#journal">Журнал</a></li>
-                <li><a href="#shop">До початку</a></li>
+                <li><a href="#main-content">На початок</a></li>
             </ul>
         </nav>
     </footer>
-
 </body>
 </html>
